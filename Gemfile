@@ -24,10 +24,10 @@ gem "jekyll-theme-hydejack", "~> 9.1"
 #    For details, see <https://github.com/kramdown/math-katex#documentation>
 #
 # If you're using the MathJax math engine instead, free to remove the line below:
-gem "kramdown-math-katex"
+# gem "kramdown-math-katex"
 
 # A JavaScript runtime for ruby that helps with running the katex gem above.
-gem "duktape"
+# gem "duktape"
 
 # Fixes `jekyll serve` in ruby 3
 gem "webrick"
@@ -46,8 +46,8 @@ group :jekyll_plugins do
   gem "jekyll-include-cache"
 
   # Non-Github Pages plugins:
-  gem "jekyll-last-modified-at"
-  gem "jekyll-compose"
+  # gem "jekyll-last-modified-at"
+  # gem "jekyll-compose"
 end
 
 gem 'wdm' if Gem.win_platform?
