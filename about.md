@@ -63,59 +63,64 @@ redirect_from:
 
 
 
-<a href="https://github.com/audunsh/bubblebox">
-    <div class="container">
-      <img src="https://raw.githubusercontent.com/audunsh/bubblebox/master/graphics/bubblebox_logo16.png" alt="Avatar" class="image" style="width:100%">
-      <div class="middle">
-        <div class="text">Bubblebox</div>
-      </div>
+  <div class="container">
+      <a href="https://github.com/audunsh/bubblebox">
+    <img src="https://raw.githubusercontent.com/audunsh/bubblebox/master/graphics/bubblebox_logo16.png" alt="Avatar" class="image" style="width:100%">
+  </a>
+    <div class="middle">
+      <div class="text"></div>
     </div>
-</a>
+  </div>
 
-<a href="https://audunsh.github.io/btjenesten/">
+
+
 <div class="container">
+    <a href="https://audunsh.github.io/btjenesten/">
   <img src="https://raw.githubusercontent.com/audunsh/btjenesten/master/graphics/b_logo_3.png" alt="Avatar" class="image" style="width:100%">
+</a>
   <div class="middle">
-    <div class="text">B-tjenesten</div>
+    <div class="text"></div>
   </div>
 </div>
-</a>
 
-<a href="https://audunsh.github.io/braketlab/">
-    <div class="container">
-      <img src="https://raw.githubusercontent.com/audunsh/braketlab/master/graphics/b_logo_3.png" alt="Avatar" class="image" style="width:100%">
-      <div class="middle">
-        <div class="text">Braketlab</div>
-      </div>
-    </div>
-</a>
 
-<a href="https://audunsh.github.io/">
-    <div class="container">
-      <img src="https://raw.githubusercontent.com/audunsh/bubblebox/master/graphics/bonsai_tree_alone.png" alt="Avatar" class="image" style="width:100%">
-      <div class="middle">
-        <div class="text">Highlights</div>
-      </div>
+
+  <div class="container">
+      <a href="https://audunsh.github.io/braketlab/">
+    <img src="https://raw.githubusercontent.com/audunsh/braketlab/master/graphics/b_logo_3.png" alt="Avatar" class="image" style="width:100%">
+    </a>
+    <div class="middle">
+      <div class="text"></div>
     </div>
-</a>
+  </div>
+
+
+
+<div class="container">
+    <a href="https://audunsh.github.io/">
+    <img src="https://raw.githubusercontent.com/audunsh/bubblebox/master/graphics/bonsai_tree_alone.png" alt="Avatar" class="image" style="width:100%">
+    </a>
+    <div class="middle">
+    <div class="text"></div>
+    </div>
+</div>
 
 
 <div class="container">
     <img src="https://raw.githubusercontent.com/audunsh/openworld/master/assets/logo.png" alt="Avatar" class="image" style="width:100%">
     <div class="middle">
-    <div class="text">Open World to come</div>
+    <div class="text"></div>
     </div>
 </div>
 
 
-<a href="https://github.com/audunsh/sunmat/blob/master/suNmat_tutorial.ipynb">
-    <div class="container">
-      <img src="https://raw.githubusercontent.com/audunsh/sunmat/master/graphics/hypersphere_2.png" alt="Avatar" class="image" style="width:100%">
-      <div class="middle">
-        <div class="text">SUnMat</div>
-      </div>
+
+<div class="container">
+    <a href="https://github.com/audunsh/sunmat/blob/master/suNmat_tutorial.ipynb"><img src="https://raw.githubusercontent.com/audunsh/sunmat/master/graphics/hypersphere_2.png" alt="Avatar" class="image" style="width:100%"></a>
+    <div class="middle">
+    <div class="text"></div>
     </div>
-</a>
+</div>
 
 
 
