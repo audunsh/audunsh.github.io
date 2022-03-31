@@ -8,12 +8,14 @@
 		</style>
 	</head>
 	<body>
-		<script src="js/three.js"></script>
-		<script src="js/OrbitControls.js"></script>
-		<script src="js/PDBLoader.js"></script>
-        <script src="js/VTKloader.js"></script>
 		<script>
-			//import {OrbitControls} from "/Users/audunhansen/projects/openworld/js/controls/OrbitControls";
+			import {THREE} from "js/three.js";
+
+			
+			import {OrbitControls} from "js/OrbitControls.js";
+			import {PDBLoader} from "js/PDBLoader.js";
+			import {VTKloader} from "js/VTKloader.js";
+
 			//const OrbitControls = require(["js/OrbitControls"])
 			const scene  = new THREE.Scene();
 			const camera = new THREE.PerspectiveCamera( 75, window.innerWidth / window.innerHeight, 1, 1000 );
@@ -127,7 +129,7 @@
             const loader_vtk = new THREE.VTKLoader();
 			const loader_pdb = new THREE.PDBLoader();
 		
-			loader_vtk.load("http://localhost:7800/orbital_p.vtk?" + new Date().getTime(), function ( geometry ) {
+			loader_vtk.load("orbital_p.vtk?" + new Date().getTime(), function ( geometry ) {
 
 				//geometry.center();
 				//geometry.computeVertexNormals();
@@ -150,7 +152,7 @@
 			} );
 
 
-			loader_vtk.load("http://localhost:7800/orbital_m.vtk?"  + new Date().getTime(), function ( geometry ) {
+			loader_vtk.load("orbital_m.vtk?"  + new Date().getTime(), function ( geometry ) {
 
 				//geometry.center();
 				//geometry.computeVertexNormals();
@@ -284,7 +286,7 @@
 			const offset = new THREE.Vector3();
 
 			//loadMolecule( 'https://files.rcsb.org/download/6QYT.pdb' );
-			loadMolecule("http://localhost:7800/test_2.pdb")
+			loadMolecule("test_2.pdb")
 
 			//renderer.autoRotate = true;
 			//renderer.autoRotateSpeed = 2.0;
