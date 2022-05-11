@@ -55,6 +55,8 @@ menu:
     url:               /publications/
   - title:             Blog
     url:               /blog/
+  - title:             Philosophy
+    url:               /philosophy/
   - title:             About
     url:               /about/
 
