@@ -64,7 +64,7 @@ redirect_from:
 
 
   <div class="container">
-      <a href="https://github.com/audunsh/bubblebox">
+      <a href="https://audunsh.github.io/bubblebox/">
     <img src="https://raw.githubusercontent.com/audunsh/bubblebox/master/graphics/bubblebox_logo16.png" alt="Avatar" class="image" style="width:100%">
   </a>
     <div class="middle">
