@@ -19,7 +19,5 @@ The process of re-learning and passing on the knowledge can dilute these ingredi
 
 So how do we teach in ways that preserves the mystery and promotes creativity? I believe we should not focus that much on answers - rather, we should communicate a concise and clear understanding of our problems, and guide students as best we can in their work on solving them. 
 
-Also, we should encourage respect the creative process
-
-creativity and highlight and cherish the remaining mysteries and weaknesses of current theories. That our theories has not been falsified yet does not mean that they are true. 
+Also, we should encourage creativity and curiosity, cherish the mysteries and weaknesses of current theories. That our theories has not been falsified yet does not mean that they are true. 
 
