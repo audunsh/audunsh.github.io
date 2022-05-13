@@ -11,7 +11,7 @@ redirect_from:
 
 # Teaching science
 
-In my opinion, science and learning is fundamentally the same thing. The only true difference is reflected in the collective aspect; *to do science is to learn things that nobody else knows the answer to.*
+In my opinion, science and learning are fundamentally the same thing. The only true difference is reflected in the collective aspect; *to do science is to learn things that nobody else knows the answer to.*
 
 Serendipity, creativity and curiosity are all likely crucial ingredients involved whenever something is learnt for the very first time. In that moment, the outcome is as unknown as it will ever be, and the motivation for learning it is likely at it's peak. 
 
