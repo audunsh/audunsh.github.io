@@ -19,7 +19,7 @@ redirect_from:
 <style>
 .container {
   position: relative;
-  width: 12%;
+  width: 10%;
   float: left;
 }
 
