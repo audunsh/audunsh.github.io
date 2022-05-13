@@ -107,7 +107,7 @@ redirect_from:
 
 
 <div class="container">
-    <img src="https://raw.githubusercontent.com/audunsh/openworld/master/assets/logo.png" alt="Avatar" class="image" style="width:100%">
+    <a href="https://audunsh.github.io/slides/UTFORSK.html"><img src="https://audunsh.github.io/slides/assets/owl_logo.png" alt="Avatar" class="image" style="width:100%"></a>
     <div class="middle">
     <div class="text"></div>
     </div>
@@ -121,6 +121,15 @@ redirect_from:
     <div class="text"></div>
     </div>
 </div>
+
+<div class="container">
+    <a href="ttps://github.com/audunsh/evince"><img src="https://github.com/audunsh/evince/raw/master/graphics/evince_logo.png" alt="Avatar" class="image" style="width:100%"></a>
+    <div class="middle">
+    <div class="text"></div>
+    </div>
+</div>
+
+
 
 
 
