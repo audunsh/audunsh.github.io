@@ -4,7 +4,7 @@ title: Space for creative learning in chemistry
 description: >
   How can we make more room for creativity in science education?
 image: 
-  path: https://www.mn.uio.no/kjemi/studier/utdanningsleder/elastiske-kuler.png
+  path: https://www.mn.uio.no/kjemi/studier/utdanningsleder/screen-shot-2021-06-14-at-09.04.23.png
 related_posts:
 sitemap: false
 ---
