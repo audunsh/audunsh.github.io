@@ -1,0 +1,605 @@
+<!doctype html>
+<html>
+	
+	<head>
+		
+
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>KJM1130 - Fri energi</title>
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/white.css">
+		<link href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="plugin/highlight/zenburn.css">
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section data-background-image="assets/backdrop_general_7.png" data-background-opacity = .3>
+					<img data-src="assets/uio_logo2.png" height = '50px' align = 'right'>
+					<h2 class="r-fit-text"><font color="#008888">Termo</font><font color="#002222">dynamikk</font></h2>
+					<h4><font color ="#002222">KJM1130 (H22)</font></h4>
+					<ul>
+						<li>Topic 3C (Atkins): Gibbs og Helmholtz fri energi</li>
+						<li>Topic 3D (Atkins): Kombinasjon av første og andre lov</li>
+					</ul>
+					<small>Audun Skau Hansen (<a href="mailto:a.s.hansen@kjemi.uio.no">a.s.hansen@kjemi.uio.no</a>)</small>
+					<p>&nbsp;</p>
+				</section>
+
+				<section>
+					<h4><font color ="#002222">Ukens tema</font></h4>
+					<ul>
+						<li>Helmholtz fri energi</li>
+						<li>Gibbs fri energi</li>
+						<li>Maksimalt arbeid</li>
+						<li>Standard molar Gibbs energi</li>
+						<li>Born's likning</li>
+						<li>Samspill mellom første og andre hovedsetning</li>
+						<li>Fundamental-likningene</li>
+						<li>Maxwell-relasjoner</li>
+						<li>Trykk- og temperaturavhengighet av Gibbs fri energi</li>
+					</ul>
+				</section>
+
+
+				<section>
+					<h3>Termodynamikk i et nøtteskall</h3>
+					<hr>
+					<h4>Første lov</h4>
+					\[\begin{aligned}
+					U = Q + W 
+					\end{aligned} \]
+					
+					<p></p>
+
+
+					<h4>Andre lov</h4>
+					\[\begin{aligned}
+					\Delta S_\text{tot} = \Delta S_\text{system} + \Delta S_\text{omgivelser} \ge 0
+					\end{aligned} \]
+				</section>
+
+				<section>
+					<h4>Første lov + andre lov + multivariat kalkulus</h4>
+					<p></p>
+					...lar deg forutsi atomers og molekylers tendens til å 
+					<ul>
+						<li>reagere</li>
+						<li>bindes</li>
+						<li>absorberes</li>
+						<li>utkrystalliseres</li>
+						<li>endre fase</li>
+						<li>endre form</li>
+					</ul>
+				</section>
+
+				<section data-background-image="assets/backdrop_general_3.png" data-background-opacity = 1>
+					<font color="#ffffff">
+					Vi betrakter <b>et termodynamisk system:</b>
+					<p>					</p>
+					<ul>
+						<li>En samling objekter</li>
+						<li>Definert av randbetingelser/relasjoner til omgivelsene</li>
+						<li>La oss se noen eksempler</li>
+					</ul>
+					<p></p>
+				</font>
+				</section>
+
+				<section data-background-image="assets/backdrop_general_7.png" data-background-opacity = .3>
+					Tilstanden i et system er fullstendig spesifisert med 
+					<p class="fragment">\[ S = S(U, V, \mathbf{N})\]</p>
+				    <p class="fragment">\[ U = U(S, V, \mathbf{N})\]</p>
+					<p class="fragment">S og U er tilstandsfunksjoner.</p>
+					<p class="fragment">Trenger vi noe mer?</p>
+				</section>
+
+				<section data-background-image="assets/backdrop_general_7.png" data-background-opacity = .3>
+					Et kjemisk system er sjeldent isolert:
+					<p class="fragment">- ofte termisk likevekt med omgivelsene</p>
+				    <p class="fragment">- ofte trykk-likevekt med omgivelsene</p>
+					<p class="fragment">S og U beskriver systemet, ikke omgivelsene</p>
+				</section>
+
+				<section>
+					<h3>Entalpi</h3>
+					<hr>
+					Energien som kreves for å skape et system og plassere det i omgivelsene
+					\[
+					H := U + PV
+					 \]
+					<p class="fragment">Ved konstant temperatur: $U$ kan hentes fra omgivelsene, og avgis som $\Delta S$. </p>
+				</section>
+
+				<section>
+					<h3>Entalpi</h3>
+					<hr>
+					Energien som kreves for å skape et system og plassere det i omgivelsene
+					\[
+					H := U + PV
+					 \]
+					Hvor mye av denne energien kan frigjøres? (fri energi)
+				</section>
+
+				
+				
+
+				<section data-background-image="assets/backdrop_general_3.png" data-background-opacity = 1>
+					<h2><font color="#ffffff">
+					Spontanitet
+				</font></h2>
+					<hr>
+					<font color="#ffffff">
+					En reaksjon som skjer uten tilførsel av energi eller påvirkning.
+				</font>
+				</section>
+
+				<section>
+					<h3>En spontan prosess (I)</h3>
+					<hr>
+					\[
+					4\text{Fe(s)} + 3\text{O}_2\text{(g)} \rightarrow 2 \text{Fe}_2\text{O}_3\text{(s)} 
+					 \]
+					hvor
+					\[
+					\Delta H_r =-824 \text{kJ/mol}  \quad \Delta S_\text{system} < 0
+					\]
+					<p></p>
+					Hva gjør prosessen spontan?
+				</section>
+
+				<section>
+					<h3>En spontan prosess (II)</h3>
+					<hr>
+					\[
+					\text{H}_2\text{O(s)} \rightarrow \text{H}_2\text{O(l)}
+					 \]
+					hvor
+					\[
+					\Delta H_r = 5.95 \text{kJ/mol}  \quad \Delta S_\text{system} > 0
+					\]
+				</section>
+
+
+				<section data-background-image="assets/dark_0.400000.png" data-background-opacity = 1>
+					<h2><font color="#ffffff">
+					Spontanitet
+				</font></h2>
+					<hr>
+					<font color="#ffffff">
+					Hvordan forutsi hvorvidt en prosess skjer spontant eller ikke?
+				</font>
+				</section>
+
+				<section data-background-image="assets/dark_0.200000.png" data-background-opacity = 1>
+					<font color="#ffffff">
+					For spontane prosesser i åpne og lukkede systemer må
+					\[\begin{aligned}
+					\Delta S_\text{tot} = \Delta S_\text{system} + \Delta S_\text{omgivelser} \ge 0
+					\end{aligned} \]
+					men fortegnet på $\Delta S_\text{system}$ er ubestemt (vi kjenner ikke $\Delta S_\text{omgivelser}$).
+				</font>
+				</section>
+
+				<section>
+					<h3>Clausius' ulikhet</h3>
+					<hr>
+					\[\begin{aligned}
+					dS - \frac{dq}{T} \ge 0 \rightarrow T dS - dq \ge 0
+					\end{aligned} \]
+					<p></p>
+					Inneholder kun systemets tilstandsfunksjoner og varmeutvekslingen med omgivelsene.
+				</section>
+
+				
+
+				<section>
+					Ved konstant volum er $dU = \delta q$ (siden ${\delta w} = 0 $), så
+					\[\begin{aligned}
+					dU - T dS \le 0
+					\end{aligned} \]
+					<p></p>
+					Inneholder <b>kun systemets tilstandsfunksjoner</b>.
+				</section>
+
+				<section>
+					\[\begin{aligned}
+					dU - T dS  \le 0
+					\end{aligned} \]
+					<p></p>
+					(a.1)  For konstant indre energi er $dS_{U,V}  \ge 0$.
+					<p></p>
+					(b.1)  For konstant entropi er $dU_{S,V} \le 0$.
+				</section>
+
+				<section>
+					\[\begin{aligned}
+					\text{(a.1)} \quad dS_{U,V}  \ge 0
+					\end{aligned} \]
+					<hr>
+					I en spontan endring ved konstant volum og indre energi øker entropien.
+				</section>
+
+				<section>
+					\[\begin{aligned}
+					\text{(b.1)} \quad dU_{S,V} \le 0
+					\end{aligned} \]
+					<hr>
+					I en spontan endring ved konstant volum og entropi øker entropien i omgivelsene som følge av varmeoverføring.
+				</section>
+
+
+				<section>
+					Ved konstant trykk er $dH = \delta q$ (siden $VdP = 0 $), så
+					\[\begin{aligned}
+					dH  - T dS \le 0
+					\end{aligned} \]
+					<p></p>
+					Inneholder igjen <b>kun systemets tilstandsfunksjoner</b>.
+				</section>
+
+				<section>
+					\[\begin{aligned}
+					dH - T dS \le 0
+					\end{aligned} \]
+					<p></p>
+					(a.2) For konstant entalpi er $dS_{H,V}  \ge 0$.
+					<p></p>
+					(b.2) For konstant entropi er $dH_{S,V} \le 0$.
+				</section>
+
+				<section>
+					\[\begin{aligned}
+					\text{(a.2)} \quad dS_{H,V}  \ge 0
+					\end{aligned} \]
+					<hr>
+					I en spontan endring ved konstant trykk og entalpi øker entropien.
+				</section>
+
+				<section>
+					\[\begin{aligned}
+					\text{(b.2)} \quad dH_{S,V} \le 0
+					\end{aligned} \]
+					<hr>
+					I en spontan endring ved konstant trykk og entropi øker entropien i omgivelsene som følge av varmeoverføring.
+				</section>
+
+				<section>
+					To nye tilstandsfunksjoner for
+					<h3>Spontanitet</h3>
+					<hr>
+					<table>
+						<tr>
+							<td>
+									\[\begin{aligned}
+					dA := dU - T dS  \le 0
+					\end{aligned} \]
+					<p> </p>
+				<small>hvor $A$ er Helmholtz fri energi.</small>
+					<img src="assets/v_const.png" height = "200px">
+							</td>
+							<td></td>
+							<td>
+								\[\begin{aligned}
+									dG := dH - T dS  \le 0
+				\end{aligned} \]
+				<p> </p>
+				<small>hvor $G$ er Gibbs fri energi.</small>
+				<img src="assets/p_const.png" height = "180px" >
+							</td>
+						</tr>
+					</table>
+				</section>
+
+				<section data-background-image="assets/dark_0.100000.png" data-background-opacity = 1>
+					<h2><font color="#ffffff">
+					Helmholtz fri energi
+				</font></h2>
+					<hr>
+					<font color="#ffffff">
+						\[\begin{aligned}
+									dA := T dS - dU ,
+				\end{aligned} \]
+				<p></p>
+					angir maksimalt arbeid en prosess kan utføre på omgivelsene (utledning).
+				</font>
+				</section>
+
+
+				<section data-background-image="assets/dark_0.100000.png" data-background-opacity = 1>
+					<h2><font color="#ffffff">
+					Gibbs fri energi
+				</font></h2>
+					<hr>
+					<font color="#ffffff">
+						\[\begin{aligned}
+									dG := dH - T dS ,
+				\end{aligned} \]
+				<p></p>
+					innehar en sentral plass i kjemifaget
+					<p class="fragment">(konstant trykk) </p>
+				</font>
+				</section>
+
+				<section data-background-image="assets/dark_0.100000.png" data-background-opacity = 1>
+					<h2><font color="#ffffff">
+					Gibbs fri energi
+				</font></h2>
+					<hr>
+					<font color="#ffffff">
+						Maks ikke-ekspansivt arbeid (utledning)
+				</font>
+				</section>
+
+				
+
+				<section data-background-image="assets/dark_0.100000.png" data-background-opacity = 1>
+					<h2><font color="#ffffff">
+					Gibbs fri energi
+				</font></h2>
+					<hr>
+					<font color="#ffffff">
+						<ul>
+							<li>Dersom $\Delta G < 0$ skjer prosessen spontant.</li>
+							<li>Dersom $\Delta G = 0$ er det likevekt.</li>
+							<li>Dersom $\Delta G > 0$ er den motsatte prosessen spontan.</li>
+						</ul>
+						
+				</font>
+				</section>
+
+				
+
+
+				<section>
+					<h3>Er prosessen spontan?</h3>
+					<hr>
+					\[
+					\text{NH}_4\text{NO}_3\text{(s)} \rightarrow \text{NH}_4^+\text{(aq)} + \text{NO}_3\text{(aq)}
+					 \]
+					ved $T=298\text{K}$, hvor
+					\[
+					\Delta H_r = 28 \text{kJ/mol}  \quad \Delta S_\text{system} = 108.7 \text{J/(K mol)}
+					\]
+					<p></p>
+				</section>
+
+				<section>
+					<h3>Er prosessen spontan?</h3>
+					<hr>
+					\[
+					\Delta G = 298 \text{K} \cdot 0.1088 \text{J/(K mol)} - 28  \text{kJ/mol}
+					 \]
+
+					 \[
+					 = -4.39 \text{kJ/mol} < 0
+					 \]
+				</section>
+
+				<section data-background-image="assets/dark_0.100000.png" data-background-opacity = 1>
+					<h2><font color="#ffffff">
+					Gibbs fri energi
+				</font></h2>
+					<hr>
+					<font color="#ffffff">
+						For endoterme og spontane reaksjoner er $\Delta H >0$  og $\Delta G < 0$:
+						\[\begin{aligned}
+									dG := dH - T dS ,
+				\end{aligned} \]
+				<p></p>
+				Hva forteller dette oss om $\Delta S$?
+				</font>
+				</section>
+
+				<section data-background-image="assets/dark_0.100000.png" data-background-opacity = 1>
+					<font color="#ffffff">
+					<h3 ><font color="#ffffff">Spontanitet og Gibbs fri energi</font></h3>
+					<table>
+						<thead><tr>
+							<th>$\Delta G = $</th>
+							<th>$\Delta H - $</th>
+							<th>$T \Delta S$</th>
+							<th></th>
+						</tr></thead>
+						<tbody><tr>
+							<td>-</td>
+							<td>-</td>
+							<td>+</td>
+							<td><small>Entalpisk + entropisk favorisert</small></td>
+						</tr>
+						<tr>
+							<td>-</td>
+							<td>+</td>
+							<td>+</td>
+							<td><small>Entropisk favorisert (høy T)</small></td>
+						</tr>
+						<tr>
+							<td>-</td>
+							<td>-</td>
+							<td>-</td>
+							<td><small>Entalpisk favorisert (høy T)</small></td>
+						</tr></tbody>
+					</table>
+				    </font>
+				</section>
+
+
+				<section>
+				<iframe width="800" height="600" src="https://www.youtube.com/embed/EvknN89JoWo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				</section>
+				
+
+				<section>
+					<h3>Haber Bosch prosessen</h3>
+					<hr>
+					\[
+					3\text{H}_2\text{(g)} + N_2\text{(g)} = 2\text{NH}_3\text{(g)} \quad \Delta H = -92 \text{kJ/mol}
+					 \]
+					Entropisk ugunstig (4 $\rightarrow$ 2 gassmolekyler) 
+				</section>
+
+
+				<section>
+					<h3>Haber Bosch prosessen</h3>
+					<hr>
+					Ved høyere trykk (le Chatelier):
+					\[
+					3\text{H}_2\text{(g)} + N_2\text{(g)} = 2\text{NH}_3\text{(g)} \quad \Delta G < 0
+					 \]
+				</section>
+
+				
+
+				<section>
+					<h3>Standard Gibbs reaksjonsenergi</h3>
+					<hr>
+					\[
+					\Delta_r G^\ominus = \Delta_r H^\ominus - T \Delta_r S^\ominus
+					 \]
+					 tabulerte verdier for $\Delta_r H^\ominus, \Delta_r S^\ominus$ kombineres for å bestemme Gibbs reaksjonsenergier.
+				</section>
+
+				<section>
+					<h3>Standard Gibbs reaksjonsenergi</h3>
+					<hr>
+					For å bestemme standard Gibbs reaksjonsenergi:
+					\[
+					\Delta_r G^\ominus = \sum_\text{produkter} \nu \Delta_f G^\ominus - \sum_\text{reaktanter} \nu \Delta_f G^\ominus
+					 \]
+					 hvor $\Delta_f G^\ominus$ typisk er tabulert og $\Delta_f G^\ominus = 0$ for grunnstoffene.
+				</section>
+
+				<section>
+					<h3>Standard Gibbs reaksjonsenergi</h3>
+					<hr>
+					<img src="assets/gibbs_standard.png" width = "50%">
+				</section>
+
+				<section>
+					<h3>Standard Gibbs reaksjonsenergi</h3>
+					<hr>
+					Regneeksempel.
+				</section>
+
+				<section>
+					<h3>Krefter og likevekt</h3>
+					<hr>
+					Krefter endrer partiklenes bevegelse:
+					\[\begin{aligned}
+					F = -\nabla U = -\sum_i \frac{\partial}{\partial x_i} U(x_1, x_2, ...) \hat{e}_i
+					\end{aligned} \]
+					i likevekt når $\nabla U = 0$.
+					<p></p>
+					<img src="assets/test2.gif" width = "200px">
+				</section>
+
+				<section>
+					<h3>Termodynamiske krefter og likevekt</h3>
+					<hr>
+					En generalisering:
+					\[\begin{aligned}
+					\mathbf{F} = -\nabla S(U, V, \mathbf{N})
+					\end{aligned} \]
+					i likevekt når $\nabla S = 0$ (andre lov).
+					<p class="fragment">Hva er kreftene $\mathbf{F}$ her?</p>
+				</section>
+
+
+				<section>
+					<h3>Termodynamiske krefter og likevekt</h3>
+					<hr>
+					Vi har tidligere utledet (på tavla) at:
+					\[
+					dU =  ( \frac{\partial U}{\partial S}) dS + ( \frac{\partial U}{\partial V})dV  + ( \frac{\partial U}{\partial N}) dN.
+					\]
+					Kan vi tolke parentesene som "krefter"?
+				</section>
+
+				<section>
+					<h3>Fundamentallikningen</h3>
+					<hr>
+					For lukkede systemer
+					\[
+					dU = T dS - p dV .
+					\]
+					For $dN = 0$ (lukket system):
+					\[
+					dU =  ( \frac{\partial U}{\partial S}) dU + ( \frac{\partial U}{\partial V})dV .
+					\]
+				</section>
+
+				<section>
+					<h3>Fundamentallikningen</h3>
+					<hr>
+					For lukkede systemer gjelder at
+					\[
+					 \frac{\partial S}{\partial U} = T \quad \quad \quad \frac{\partial S}{\partial V} = -p.
+					\]
+				</section>
+
+				<section>
+					<h3>En Maxwell-relasjon</h3>
+					<hr>
+					\[
+					 \frac{\partial T}{\partial V} = -\frac{\partial P}{\partial S}
+					\]
+				</section>
+
+				<section>
+					<h3>Fundamentallikningen for termodynamisk kjemi</h3>
+					<hr>
+					\[
+					dG = -V dP - S dT ,
+					\]
+					hvor
+					\[
+					(\frac{\partial G}{\partial P})_T = -V \quad \quad \quad (\frac{\partial G}{\partial T})_P = -S
+					\]
+
+				</section>
+
+
+
+
+
+
+
+
+
+				<section data-background-image="assets/backdrop_general_3.png" data-background-opacity = 1>
+					<font color="#ffffff">
+					<h3><font color="#ffffff">Hva har vi oppnådd?</font></h3>
+					<hr>
+					En rekke relasjoner, kun implisitt avhengig av omgivelsene, kan beskrive dynamikken i et system.
+				</font>
+				</section>
+
+
+
+				
+			</div>
+		</div>
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script src="plugin/math/math.js"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				hash: true,
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes, RevealMath.KaTeX ]
+			});
+		</script>
+	</body>
+</html>
